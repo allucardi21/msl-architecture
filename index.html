@@ -16,6 +16,7 @@
             --api-bg: #fff4e6; --api-border: #ff922b; --api-text: #d9480f;
             --core-bg: #f3f0ff; --core-border: #845ef7; --core-text: #5f3dc4;
             --bridge-bg: #fff0f6; --bridge-border: #f06595; --bridge-text: #a61e4d;
+            --external-bg: #e9ecef; --external-border: #868e96; --external-text: #495057;
         }
 
         body {
@@ -141,6 +142,10 @@
         
         .style-bridge { background: var(--bridge-bg); border-color: var(--bridge-border); color: var(--bridge-text); }
         .style-bridge .tag { border-color: var(--bridge-border); background: rgba(255,255,255,0.5); }
+
+        .style-external { background: var(--external-bg); border-color: var(--external-border); color: var(--external-text); }
+        .style-external .tag { border-color: var(--external-border); background: rgba(255,255,255,0.5); }
+
 
         /* Specific Layouts */
         .phone-mockup {
@@ -435,6 +440,14 @@
                             <span class="node-subtext">Native UI -> Webview</span>
                         </div>
                     </div>
+                    <div class="node style-external">
+                        <div class="node-icon">💸</div>
+                        <div class="node-content">
+                            <span class="node-label">Виплати</span>
+                            <span class="node-subtext">Redirect to win.msl.ua</span>
+                        </div>
+                        <span class="tag">LINK</span>
+                    </div>
                     <div class="node style-iframe">
                         <div class="node-icon">💸</div>
                         <div class="node-content"><span class="node-label">Виведення коштів</span></div>
@@ -514,9 +527,6 @@
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
                     <div class="group-box" style="border-color: #868e96;">
                         <div class="group-title" style="color: #495057; border-color: #868e96;">Analytics</div>
-                        <div class="node style-core" style="background: #f8f9fa;">
-                            <span class="node-label" style="font-size: 0.8em;">Google / Firebase</span>
-                        </div>
                         <div class="node style-core" style="background: #f8f9fa;">
                             <span class="node-label" style="font-size: 0.8em;">Crashlytics</span>
                         </div>
